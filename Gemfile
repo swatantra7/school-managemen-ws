@@ -46,11 +46,11 @@ end
 
 group :test do
   gem 'rspec-rails'
-  gem 'rswag-specs'
 end
 
-group :production do
+group :production, :test do
   gem 'pg'
+  gem 'rswag-specs'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
