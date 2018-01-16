@@ -14,8 +14,6 @@ gem 'puma', '~> 3.0'
 
 gem 'contact_us', '~> 1.0.1'
 
-gem 'rswag'
-
 gem 'paperclip', '~>5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
@@ -30,6 +28,9 @@ gem 'paperclip', '~>5.0.0'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 gem 'net-ssh'
+gem 'rswag'
+gem 'rspec-rails'
+gem 'rswag-specs'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,14 +44,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-
-group :test do
-  gem 'rspec-rails'
-end
-
+  
 group :production, :test do
   gem 'pg'
-  gem 'rswag-specs'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
